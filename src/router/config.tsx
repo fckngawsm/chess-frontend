@@ -3,10 +3,27 @@ import { Root } from "../components/Root/Root";
 import { Login } from "../page/Login";
 import { Register } from "../page/Register";
 
+import { Outlet } from "react-router-dom";
+import { Header } from "../components/Header/Header";
+
+function Layout() {
+  return (
+    <>
+      <Header />
+      <Outlet />
+    </>
+  );
+}
+
 export const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Root />,
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Root />,
+      },
+    ],
   },
   {
     path: "/sign-in",
