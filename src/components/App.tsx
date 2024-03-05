@@ -1,6 +1,10 @@
-import { RouterProvider } from "react-router-dom";
-import { router } from "../router/config";
+import { CssBaseline } from "@mui/material";
 
-export const App = () => {
-  return <RouterProvider router={router} />;
+export const App = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <div className="page">
+      <CssBaseline />
+      {children}
+    </div>
+  );
 };

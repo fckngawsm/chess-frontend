@@ -1,3 +1,4 @@
+import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig } from "vite";
 
@@ -6,5 +7,9 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "src"),
     },
+  },
+  plugins: [react()],
+  optimizeDeps: {
+    include: ["@emotion/styled"],
   },
 });
