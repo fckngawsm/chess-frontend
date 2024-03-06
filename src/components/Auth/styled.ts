@@ -1,4 +1,5 @@
-import { Container } from "@mui/material";
+import { Button, Container } from "@mui/material";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { CustomTextField } from "../Сustom/CustomTextField";
 
@@ -7,8 +8,8 @@ export const StyledAuthWrapper = styled(Container)`
   padding: 0 0 80px 60px;
   height: 100vh;
   display: flex !important;
-  justify-content: center; /* Горизонтальное выравнивание */
-  align-items: center; /* Вертикальное выравнивание */
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 `;
 
@@ -32,3 +33,32 @@ export const StyledAuthWrapperForm = styled.div`
 `;
 
 export const StyledAuthInput = styled(CustomTextField)``;
+
+export const StyledAuthButtonSubmit = styled(Button)`
+  width: 320px;
+  outline: none;
+  border: none;
+  padding: 8px;
+  text-align: center;
+`;
+
+export const StyledKnightImage = styled.img<{ isSecond?: boolean }>`
+  position: absolute;
+  top: 80px; // Добавьте px для единицы
+  right: ${({ isSecond }) => (isSecond ? "60px" : "auto")};
+  left: ${({ isSecond }) => (isSecond ? "auto" : "60px")};
+`;
+
+export const StyledRedirectText = styled.h3`
+  gap: 5px;
+  display: flex;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(55, 53, 47, 0.65);
+  font-weight: 400;
+`;
+
+export const StyledAuthLink = styled(Link)`
+  text-decoration: underline;
+  color: inherit;
+`;
