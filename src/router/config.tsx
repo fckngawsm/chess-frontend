@@ -1,10 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Root } from "../components/Root/Root";
-import { Login } from "../page/Login";
-import { Register } from "../page/Register";
 
 import { Outlet } from "react-router-dom";
 import { Header } from "../components/Header/Header";
+import { authRoutes } from "./authRoutes";
 
 function Layout() {
   return (
@@ -23,14 +22,7 @@ export const router = createBrowserRouter([
         path: "/",
         element: <Root />,
       },
+      ...authRoutes,
     ],
-  },
-  {
-    path: "/sign-in",
-    element: <Login />,
-  },
-  {
-    path: "/sign-up",
-    element: <Register />,
   },
 ]);
