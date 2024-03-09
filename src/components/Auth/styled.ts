@@ -44,7 +44,7 @@ export const StyledAuthButtonSubmit = styled(Button)`
 
 export const StyledKnightImage = styled.img<{ isSecond?: boolean }>`
   position: absolute;
-  top: 80px; // Добавьте px для единицы
+  top: 80px;
   right: ${({ isSecond }) => (isSecond ? "60px" : "auto")};
   left: ${({ isSecond }) => (isSecond ? "auto" : "60px")};
 `;
