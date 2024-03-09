@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       boxSizing: "border-box",
     },
     "& .MuiOutlinedInput-input": {
-      color: "#000000",
+      color: "#606062",
     },
     "& .MuiOutlinedInput-root": {
       width: "320px",
@@ -16,10 +16,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 
       "& fieldset": {
         borderRadius: "4px",
-        borderColor: "#000000",
-      },
-      "&.Mui-focused fieldset": {
-        borderColor: "#FBBC04",
+        borderColor: "#606062",
       },
     },
     "&.Mui-focused fieldset": {
