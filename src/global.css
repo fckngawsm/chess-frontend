@@ -1,11 +1,15 @@
 @import url(./vendor/fonts/inter.css);
 @import url(./vendor/normalize.css);
 
+body {
+    background-color: #1E1E21 !important;
+}
+
 .page {
     text-rendering: optimizeLegibility;
     margin: 0 auto;
     font-family: 'Inter',Arial, Helvetica, sans-serif;
     font-weight: 400;
     max-width: 1440px;
-    color:#000000;
+    color: #F8F8F8;
 }

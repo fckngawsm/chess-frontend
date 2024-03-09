@@ -16,5 +16,14 @@ export const theme = createTheme({
         },
       },
     },
+    MuiMenu: {
+      styleOverrides: {
+        paper: {
+          width: "230px",
+          backgroundColor: "#2E2E33",
+          color: "#ffffff",
+        },
+      },
+    },
   },
 });
